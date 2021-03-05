@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${DATABASE_URL}
+    username: postgres
+    password: postgres
+  jpa:
+    database: postgresql
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+bot:
+  name: ${BOT_NAME:CooloutBot}
+  token: ${BOT_TOKEN}
+
+coolout:
+  chat:
+    test: ${COOLOUT_CHAT_TEST:-478940670}
+    prod: ${COOLOUT_CHAT_PROD}
