@@ -9,6 +9,9 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: create
+  profiles:
+    active: initdb
+
 bot:
   name: ${BOT_NAME:CooloutBot}
   token: ${BOT_TOKEN}
@@ -17,3 +20,4 @@ coolout:
   chat:
     test: ${COOLOUT_CHAT_TEST:-478940670}
     prod: ${COOLOUT_CHAT_PROD}
+
