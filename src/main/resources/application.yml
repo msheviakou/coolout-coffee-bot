@@ -8,9 +8,9 @@ spring:
     database: postgresql
     show-sql: true
     hibernate:
-      ddl-auto: create
-  profiles:
-    active: initdb
+      ddl-auto: none
+#  profiles:
+#    active: initdb
 
 bot:
   name: ${BOT_NAME:CooloutBot}
