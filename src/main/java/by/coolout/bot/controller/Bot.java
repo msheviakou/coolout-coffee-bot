@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.objects.Chat;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
@@ -61,6 +62,9 @@ public class Bot extends TelegramLongPollingBot {
         if (update.hasMessage()) {
             final String chatId = String.valueOf(update.getMessage().getChatId());
             final String messageText = update.getMessage().getText();
+
+            Chat chat = update.getMessage().getChat();
+            log.info(chat.getFirstName() + " " + chat.getLastName() + " clicked: " + messageText);
 
             try {
                 SendMessage message = startHandler.handle(chatId, messageText);
