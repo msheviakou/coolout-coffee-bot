@@ -24,6 +24,7 @@ public class Order {
     private String place;
     private Double cost;
     private String username;
+    private String login;
 
     @Override
     public String toString() {
@@ -36,6 +37,7 @@ public class Order {
                 ", place='" + place + '\'' +
                 ", cost=" + cost +
                 ", username='" + username + '\'' +
+                ", login='" + login + '\'' +
                 '}';
     }
 }

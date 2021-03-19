@@ -1,5 +1,7 @@
 package by.coolout.bot.controller;
 
+import by.coolout.bot.entity.ChatDTO;
+import by.coolout.bot.filter.WorkScheduleFilter;
 import by.coolout.bot.handler.*;
 import by.coolout.bot.service.DrinkService;
 import by.coolout.bot.service.OrderService;
@@ -13,8 +15,7 @@ import org.telegram.telegrambots.meta.api.objects.Chat;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
-import static by.coolout.bot.statics.Messages.DONT_UNDERSTAND;
-import static by.coolout.bot.statics.Messages.ORDER_ACCEPTED;
+import static by.coolout.bot.statics.Messages.*;
 
 @Slf4j
 @Component
@@ -26,7 +27,7 @@ public class Bot extends TelegramLongPollingBot {
     @Value("${bot.token}")
     private String botToken;
 
-    @Value("${coolout.chat.prod}")
+    @Value("${coolout.chat}")
     private String cooloutChat;
 
     private DefaultHandler startHandler;
@@ -60,22 +61,29 @@ public class Bot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
         if (update.hasMessage()) {
-            final String chatId = String.valueOf(update.getMessage().getChatId());
-            final String messageText = update.getMessage().getText();
+            ChatDTO chatDto = ChatDTO.builder()
+                    .chatId(String.valueOf(update.getMessage().getChatId()))
+                    .messageText(update.getMessage().getText())
+                    .login(update.getMessage().getChat().getUserName())
+                    .build();
 
             Chat chat = update.getMessage().getChat();
-            log.info(chat.getFirstName() + " " + chat.getLastName() + " clicked: " + messageText);
+            log.info(chat.getFirstName() + " " + chat.getLastName() + " clicked: " + chatDto.getMessageText());
 
             try {
-                SendMessage message = startHandler.handle(chatId, messageText);
-                sendMessage(message);
+                if (WorkScheduleFilter.isOpened()) {
+                    SendMessage message = startHandler.handle(chatDto);
+                    sendMessage(message);
 
-                if (message.getText().contains(ORDER_ACCEPTED)) {
-                    sendMessage(orderHandler.sendMessageToCoolout(cooloutChat));
+                    if (message.getText().contains(ORDER_ACCEPTED)) {
+                        sendMessage(orderHandler.sendMessageToCoolout(cooloutChat));
+                    }
+                } else {
+                    sendMessage(new SendMessage(chatDto.getChatId(), WORK_SCHEDULE));
                 }
             } catch (Exception e) {
                 log.error(e.getMessage());
-                sendMessage(new SendMessage(chatId, DONT_UNDERSTAND));
+                sendMessage(new SendMessage(chatDto.getChatId(), DONT_UNDERSTAND));
             }
         }
     }

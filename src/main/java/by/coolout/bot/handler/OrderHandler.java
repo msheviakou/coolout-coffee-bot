@@ -2,6 +2,7 @@ package by.coolout.bot.handler;
 
 import by.coolout.bot.context.Context;
 import by.coolout.bot.context.ContextManager;
+import by.coolout.bot.entity.ChatDTO;
 import by.coolout.bot.entity.Drink;
 import by.coolout.bot.entity.Order;
 import by.coolout.bot.service.DrinkService;
@@ -29,13 +30,14 @@ public class OrderHandler extends DefaultHandler {
     }
 
     @Override
-    public SendMessage handle(String chatId, String messageText) {
+    public SendMessage handle(ChatDTO chatDTO) {
         SendMessage message;
-        Context context = ContextManager.get(chatId);
+        Context context = ContextManager.get(chatDTO.getChatId());
         String text;
-        if (context.getIntegerAttribute(CTX_STEP) == 8 && YES.equals(messageText)) {
-            context.put(CTX_PRICE, messageText);
-            ContextManager.put(chatId, context);
+        if (context.getIntegerAttribute(CTX_STEP) == 8 && YES.equals(chatDTO.getMessageText())) {
+            context.put(CTX_PRICE, chatDTO.getMessageText());
+            context.put(CTX_LOGIN, chatDTO.getLogin());
+            ContextManager.put(chatDTO.getChatId(), context);
             text = context.getStringAttribute(CTX_USERNAME) + ORDER_ACCEPTED;
 
             createOrder(context);
@@ -43,14 +45,14 @@ public class OrderHandler extends DefaultHandler {
         } else {
             text = CAN_TRY_AGAIN;
         }
-        ContextManager.clear(chatId);
+        ContextManager.clear(chatDTO.getChatId());
         ReplyKeyboardMarkup keyboard = super.getTelegramService().createKeyboard(List.of("/start"));
-        message = super.getTelegramService().createMessage(chatId, text, keyboard);
+        message = super.getTelegramService().createMessage(chatDTO.getChatId(), text, keyboard);
         return message;
     }
 
     public SendMessage sendMessageToCoolout(String chatId) {
-        String text = String.format("Готовим %s объёма %s %s\nСиропчик: %s\nПожелания клиента: %s\nВремя прибытия: %s\nСтоимость заказа: %s\nЗовут гостя: %s",
+        String text = String.format("%s объёма %s %s\nСиропчик: %s\nПожелания клиента: %s\nВремя прибытия: %s\nСтоимость заказа: %s\nЗовут гостя: %s",
                 Drinks.valueOf(order.getDrink().getName()).getName(),
                 order.getDrink().getVolume(),
                 order.getPlace(),
@@ -80,5 +82,6 @@ public class OrderHandler extends DefaultHandler {
         order.setCost(Math.round(cost * 100.0) / 100.0);
         order.setUsername(context.getStringAttribute(CTX_USERNAME));
         order.setPlace(context.getStringAttribute(CTX_PLACE));
+        order.setLogin(context.getStringAttribute(CTX_LOGIN));
     }
 }

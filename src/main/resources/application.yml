@@ -1,23 +1,20 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: ${DATABASE_URL}
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/coolout}
     username: postgres
-    password: postgres
+    password: admin
   jpa:
     database: postgresql
     show-sql: true
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
 #  profiles:
 #    active: initdb
 
 bot:
-  name: ${BOT_NAME:CooloutBot}
-  token: ${BOT_TOKEN}
+  name: ${BOT_NAME:CooloutTestBot}
+  token: ${BOT_TOKEN:1758715668:AAHjA366ZmYSSAU_SExSdtbljcFUA7TKb0U}
 
 coolout:
-  chat:
-    test: ${COOLOUT_CHAT_TEST:-478940670}
-    prod: ${COOLOUT_CHAT_PROD}
-
+  chat: ${COOLOUT_CHAT:-478940670}

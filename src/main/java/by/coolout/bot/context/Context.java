@@ -14,6 +14,7 @@ public class Context {
     public static final String CTX_PLACE="place";
     public static final String CTX_PRICE="price";
     public static final String CTX_USERNAME="username";
+    public static final String CTX_LOGIN="login";
 
     private Map<String, Object> attributes = new HashMap<>();
 
