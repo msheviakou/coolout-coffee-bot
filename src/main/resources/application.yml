@@ -8,13 +8,13 @@ spring:
     database: postgresql
     show-sql: true
     hibernate:
-      ddl-auto: none
+      ddl-auto: create-drop
 #  profiles:
 #    active: initdb
 
 bot:
   name: ${BOT_NAME:CooloutTestBot}
-  token: ${BOT_TOKEN:1758715668:AAHjA366ZmYSSAU_SExSdtbljcFUA7TKb0U}
+  token: ${BOT_TOKEN:1682904051:AAHecSD2S9nqLUwgCn2YvQTG0Quqx2RLUCQ}
 
 coolout:
   chat: ${COOLOUT_CHAT:-478940670}

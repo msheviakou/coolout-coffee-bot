@@ -21,7 +21,12 @@ public class PlaceHandler extends DefaultHandler {
             context.put(CTX_PLACE, chatDTO.getMessageText());
             ContextManager.put(chatDTO.getChatId(), context);
 
-            message = super.getTelegramService().createMessage(chatDTO.getChatId(), PRESS_USERNAME, new ReplyKeyboardRemove());
+            String text = PRESS_USERNAME;
+//            if (PLACE_DELIVERY.equals(context.getStringAttribute(CTX_PLACE))) {
+//                text = PRESS_CONTACT_INFO;
+//            }
+
+            message = super.getTelegramService().createMessage(chatDTO.getChatId(), text, new ReplyKeyboardRemove());
         } else {
             message = super.handle(chatDTO);
         }

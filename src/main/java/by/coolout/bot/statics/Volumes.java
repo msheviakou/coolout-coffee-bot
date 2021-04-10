@@ -2,8 +2,7 @@ package by.coolout.bot.statics;
 
 public enum Volumes {
 
-    VOLUME_20 (20),
-    VOLUME_42 (42),
+    VOLUME_50 (50),
     VOLUME_120 (120),
     VOLUME_180 (180),
     VOLUME_250 (250),

@@ -14,8 +14,14 @@ public enum Drinks {
     COCOA ("Какао"),
     CHOCOLATE ("Горячий шоколад"),
     CHILD_CAPPUCCINO ("Детский капучино"),
-    TEA ("Чай"),
-    TEA_LATTE("Чай Латте"),
+    TEA_BLACK ("Чай чёрный"),
+    TEA_GREEN ("Чай зелёный"),
+    TEA_RED ("Чай красный"),
+    TEA_1 ("Чай имбирный"),
+    TEA_2 ("Чай малиновый"),
+    TEA_3 ("Чай пряная вишня"),
+    TEA_4 ("Чай облепиховый"),
+    TEA_LATTE("Пуэр Латте"),
     TEA_MATCHA_GREEN("Матча зелёная"),
     TEA_MATCHA_BLUE("Матча голубая");
 
