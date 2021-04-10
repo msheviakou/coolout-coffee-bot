@@ -13,6 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>coolout-coffee-bot</name>
 	<description>Chat Bot for Coolout Coffee</description>
+	<packaging>jar</packaging>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
