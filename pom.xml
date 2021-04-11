@@ -56,6 +56,13 @@
 		</dependency>
 	</dependencies>
 
+	<distributionManagement>
+		<repository>
+			<id>myrepository</id>
+			<url>file:.mvn/maven-repo</url>
+		</repository>
+	</distributionManagement>
+
 	<build>
 		<plugins>
 <!--			<plugin>-->
