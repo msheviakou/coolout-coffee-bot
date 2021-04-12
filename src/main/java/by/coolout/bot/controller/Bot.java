@@ -71,16 +71,16 @@ public class Bot extends TelegramLongPollingBot {
             log.info(chat.getFirstName() + " " + chat.getLastName() + " clicked: " + chatDto.getMessageText());
 
             try {
-                if (WorkScheduleFilter.isOpened()) {
+//                if (WorkScheduleFilter.isOpened()) {
                     SendMessage message = startHandler.handle(chatDto);
                     sendMessage(message);
 
                     if (message.getText().contains(ORDER_ACCEPTED)) {
                         sendMessage(orderHandler.sendMessageToCoolout(cooloutChat));
                     }
-                } else {
-                    sendMessage(new SendMessage(chatDto.getChatId(), WORK_SCHEDULE));
-                }
+//                } else {
+//                    sendMessage(new SendMessage(chatDto.getChatId(), WORK_SCHEDULE));
+//                }
             } catch (Exception e) {
                 log.error(e.getMessage());
                 sendMessage(new SendMessage(chatDto.getChatId(), DONT_UNDERSTAND));

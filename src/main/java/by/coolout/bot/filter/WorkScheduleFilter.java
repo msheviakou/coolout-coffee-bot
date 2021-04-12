@@ -19,6 +19,8 @@ public class WorkScheduleFilter {
         LocalTime startDayOff = LocalTime.of(10, 0);
         LocalTime endDayOff = LocalTime.of(22, 0);
 
+        log.info(now.toString());
+
         boolean isOpened = true;
 
         switch (day) {
