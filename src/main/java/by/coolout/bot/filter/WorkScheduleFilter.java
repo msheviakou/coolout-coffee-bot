@@ -14,24 +14,24 @@ public class WorkScheduleFilter {
         int day = Calendar.getInstance().get(DAY_OF_WEEK);
         LocalTime now = LocalTime.now();
 
-        LocalTime startWeekday = LocalTime.of(7, 0);
-        LocalTime endWeekday = LocalTime.of(21, 0);
-        LocalTime startDayOff = LocalTime.of(10, 0);
-        LocalTime endDayOff = LocalTime.of(22, 0);
+        LocalTime startSunday = LocalTime.of(6, 0);
+        LocalTime endThursday = LocalTime.of(18, 0);
+        LocalTime startFriday = LocalTime.of(7, 0);
+        LocalTime endSaturday = LocalTime.of(19, 0);
 
         log.info(now.toString());
 
         boolean isOpened = true;
 
         switch (day) {
+            case FRIDAY:
             case SATURDAY:
-            case SUNDAY:
-                if (now.isBefore(startDayOff) || now.isAfter(endDayOff)) {
+                if (now.isBefore(startFriday) || now.isAfter(endSaturday)) {
                     isOpened = false;
                 }
                 break;
             default:
-                if (now.isBefore(startWeekday) || now.isAfter(endWeekday)) {
+                if (now.isBefore(startSunday) || now.isAfter(endThursday)) {
                     isOpened = false;
                 }
         }
