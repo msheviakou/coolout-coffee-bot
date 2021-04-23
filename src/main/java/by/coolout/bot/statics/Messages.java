@@ -20,5 +20,5 @@ public class Messages {
     public static final String PLACE_IN= "На месте \uD83D\uDEA9";
     public static final String PLACE_DELIVERY= "Доставка \uD83D\uDE81";
     public static final String DONT_UNDERSTAND= "Либо я дурак, либо ты сломал меня \uD83D\uDE13 Напиши /start и я заработаю \uD83D\uDE4F";
-    public static final String WORK_SCHEDULE= "Мы работаем по будням с 7:00 до 21:00 и в выходные с 10:00 до 22:00. Ждём тебя в рабочее время \uD83D\uDE0A";
+    public static final String WORK_SCHEDULE= "Наш график работы:\nВС-ЧТ с 9:00 до 21:00\nПТ-СБ с 10:00 до 22:00\nЖдём тебя в рабочее время \uD83D\uDE0A";
 }
