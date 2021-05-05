@@ -5,7 +5,7 @@ public class Messages {
     public static final String CHOOSE_DRINK= "Что будешь пить? \uD83D\uDE0A";
     public static final String CHOOSE_VOLUME= "Теперь определись с объёмом \uD83D\uDE09";
     public static final String CHOOSE_SYRUP= "Как насчёт сиропчика? \uD83D\uDE0B";
-    public static final String MENU= "Напиши всё, что хочется и в каком количестве \uD83D\uDE0B\n\n";
+    public static final String MENU= "Напиши всё, что хочется, и в каком количестве \uD83D\uDE0B\n\n";
     public static final String WRITE_WISHES= "Будут какие-нибудь пожелания? \uD83D\uDE0E";
     public static final String PRESS_TIME= "Когда тебя ждать? \uD83D\uDE0C";
     public static final String PRESS_TIME_DELIVERY= "К какому времени необходимо доставить? \uD83D\uDE0C";
