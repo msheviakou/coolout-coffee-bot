@@ -1,7 +1,6 @@
 package by.coolout.bot.controller;
 
 import by.coolout.bot.entity.ChatDTO;
-import by.coolout.bot.filter.WorkScheduleFilter;
 import by.coolout.bot.handler.*;
 import by.coolout.bot.service.DrinkService;
 import by.coolout.bot.service.OrderService;
@@ -75,7 +74,8 @@ public class Bot extends TelegramLongPollingBot {
                     SendMessage message = startHandler.handle(chatDto);
                     sendMessage(message);
 
-                    if (message.getText().contains(ORDER_ACCEPTED)) {
+                String text = message.getText();
+                if (text.contains(ORDER_ACCEPTED) || text.contains(ORDER_ACCEPTED_DELIVERY)) {
                         sendMessage(orderHandler.sendMessageToCoolout(cooloutChat));
                     }
 //                } else {
