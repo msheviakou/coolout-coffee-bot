@@ -37,7 +37,12 @@ public class NameHandler extends DefaultHandler {
                 cost += 0.45;
             }
 
-            message = super.getTelegramService().createMessage(chatDTO.getChatId(), APPROVE_PRICE + Math.round(cost * 100.0) / 100.0 + " \uD83D\uDCB8", super.getTelegramService().createKeyboard(List.of(YES, NO)));
+            String messageText = APPROVE_PRICE + Math.round(cost * 100.0) / 100.0 + " \uD83D\uDCB8";
+            if (PLACE_DELIVERY.equals(context.getStringAttribute(CTX_PLACE))) {
+                messageText = WAIT_CALL;
+            }
+
+            message = super.getTelegramService().createMessage(chatDTO.getChatId(), messageText, super.getTelegramService().createKeyboard(List.of(YES, NO)));
         } else {
             message = super.handle(chatDTO);
         }

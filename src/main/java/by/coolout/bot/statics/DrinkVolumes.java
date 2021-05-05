@@ -32,5 +32,14 @@ public class DrinkVolumes {
         drinkVolumes.put(TEA_LATTE, List.of(VOLUME_250));
         drinkVolumes.put(TEA_MATCHA_GREEN, List.of(VOLUME_250));
         drinkVolumes.put(TEA_MATCHA_BLUE, List.of(VOLUME_250));
+        drinkVolumes.put(ESPRESSO_TONIK, List.of(VOLUME_300));
+        drinkVolumes.put(FRAPPE, List.of(VOLUME_300));
+        drinkVolumes.put(BUMBLE, List.of(VOLUME_300));
+        drinkVolumes.put(MILKSHAKE, List.of(VOLUME_300));
+        drinkVolumes.put(MILKSHAKE_VANILLA, List.of(VOLUME_300));
+        drinkVolumes.put(MILKSHAKE_COFFEE, List.of(VOLUME_300));
+        drinkVolumes.put(MILKSHAKE_BANANA, List.of(VOLUME_300));
+        drinkVolumes.put(MILKSHAKE_STRAWBERRY, List.of(VOLUME_300));
+        drinkVolumes.put(MILKSHAKE_CHOCOLATE, List.of(VOLUME_300));
     }
 }

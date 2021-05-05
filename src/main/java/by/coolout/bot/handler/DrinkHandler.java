@@ -25,8 +25,8 @@ public class DrinkHandler extends DefaultHandler {
 
         if (ObjectUtils.isEmpty(context)) {
             message = super.getTelegramService().createMessage(chatDTO.getChatId(), DONT_UNDERSTAND);
-        } else if (context.getIntegerAttribute(CTX_STEP) == 1) {
-            context.put(CTX_STEP, 2);
+        } else if (context.getIntegerAttribute(CTX_STEP) == 2) {
+            context.put(CTX_STEP, 3);
             context.put(CTX_DRINK, chatDTO.getMessageText());
             ContextManager.put(chatDTO.getChatId(), context);
 

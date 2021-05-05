@@ -38,7 +38,11 @@ public class OrderHandler extends DefaultHandler {
             context.put(CTX_PRICE, chatDTO.getMessageText());
             context.put(CTX_LOGIN, chatDTO.getLogin());
             ContextManager.put(chatDTO.getChatId(), context);
+
             text = context.getStringAttribute(CTX_USERNAME) + ORDER_ACCEPTED;
+            if (PLACE_DELIVERY.equals(context.getStringAttribute(CTX_PLACE))) {
+                text = ORDER_ACCEPTED_DELIVERY;
+            }
 
             createOrder(context);
             orderService.save(order);
