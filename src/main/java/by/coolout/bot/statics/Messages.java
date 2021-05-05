@@ -53,5 +53,10 @@ public class Messages {
     public static final String MENU_YOTA= "\uD83D\uDD38 Йота (драже как эмэмдэмс) - 1.0\n";
     public static final String MENU_ZEBRA= "\uD83D\uDD38 Зебра (батончик как пикник) - 1.0\n";
     public static final String MENU_CHOCOLATE_OZERA= "\uD83D\uDD38 Шоколадка Озера (Молочный, карамель, горький) - 3.0\n";
-    public static final String MENU_CHOCOLATE_OZERA_HAZELNUT= "\uD83D\uDD38 Шоколадка Озера (Молочный с фундуком) - 3.5\n";
+    public static final String MENU_CHOCOLATE_OZERA_HAZELNUT= "\uD83D\uDD38 Шоколадка Озера (Молочный с фундуком) - 3.5\n\n";
+
+    public static final String MENU_JUICE= "Соки и лимонады \uD83C\uDF79\n";
+    public static final String MENU_JUICE_KINDS= "\uD83D\uDD39 Сок (Апельсин, Яблоко, Вишня, Томат) - 2.0\n";
+    public static final String MENU_LEMONADE_KINDS= "\uD83D\uDD39 Лимонады (Кока-Кола, Фанта, Спрайт, Святой источник Малина) - 2.0\n";
+    public static final String MENU_COCKTAIL_KINDS= "\uD83D\uDD39 Коктейльный напиток (Кола и лимон, Мохито, Пина Колада, На пляже) - 2.5\n";
 }

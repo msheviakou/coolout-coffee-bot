@@ -61,7 +61,11 @@ public class SyrupHandler extends DefaultHandler {
                 .append(MENU_YOTA)
                 .append(MENU_ZEBRA)
                 .append(MENU_CHOCOLATE_OZERA)
-                .append(MENU_CHOCOLATE_OZERA_HAZELNUT);
+                .append(MENU_CHOCOLATE_OZERA_HAZELNUT)
+            .append(MENU_JUICE)
+                .append(MENU_JUICE_KINDS)
+                .append(MENU_LEMONADE_KINDS)
+                .append(MENU_COCKTAIL_KINDS);
 
         return menu.toString();
     }
