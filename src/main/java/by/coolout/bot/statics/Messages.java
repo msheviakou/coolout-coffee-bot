@@ -31,7 +31,7 @@ public class Messages {
     public static final String MENU_SANDWICH_MAX= "\uD83D\uDD38 Сэндвич побольше - 4.0\n";
     public static final String MENU_CROISSANT= "\uD83D\uDD38 Круассан - 2.6\n";
     public static final String MENU_PUFF= "\uD83D\uDD38 Слойка с ветчиной и сыром - 2.8\n";
-    public static final String MENU_TWIST= "\uD83D\uDD38 Творожно-лимонный твист - 2.6\n\n";
+    public static final String MENU_TWIST= "\uD83D\uDD38 Творожно-лимонный твист - 2.7\n\n";
 
     public static final String MENU_DESSERT= "Десерты \uD83C\uDF70\n";
     public static final String MENU_CHEESCAKE_MINI= "\uD83D\uDD39 Чизкейк (классика, клубника, малина, лимон, шоколад) - 2.5\n";
