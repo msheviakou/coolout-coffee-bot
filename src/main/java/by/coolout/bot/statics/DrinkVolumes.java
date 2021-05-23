@@ -19,6 +19,8 @@ public class DrinkVolumes {
         drinkVolumes.put(RAF, List.of(VOLUME_180, VOLUME_250, VOLUME_350));
         drinkVolumes.put(FLAT, List.of(VOLUME_180));
         drinkVolumes.put(MOCHACINO, List.of(VOLUME_180, VOLUME_250, VOLUME_350));
+        drinkVolumes.put(RAF_HALVA, List.of(VOLUME_350));
+        drinkVolumes.put(LATTE_POPKORN, List.of(VOLUME_350));
         drinkVolumes.put(COCOA, List.of(VOLUME_250));
         drinkVolumes.put(CHOCOLATE, List.of(VOLUME_250));
         drinkVolumes.put(CHILD_CAPPUCCINO, List.of(VOLUME_250));
@@ -29,17 +31,23 @@ public class DrinkVolumes {
         drinkVolumes.put(TEA_2, List.of(VOLUME_250));
         drinkVolumes.put(TEA_3, List.of(VOLUME_250));
         drinkVolumes.put(TEA_4, List.of(VOLUME_250));
+        drinkVolumes.put(TEA_5, List.of(VOLUME_350));
+        drinkVolumes.put(TEA_6, List.of(VOLUME_350));
         drinkVolumes.put(TEA_LATTE, List.of(VOLUME_250));
         drinkVolumes.put(TEA_MATCHA_GREEN, List.of(VOLUME_250));
         drinkVolumes.put(TEA_MATCHA_BLUE, List.of(VOLUME_250));
         drinkVolumes.put(ESPRESSO_TONIK, List.of(VOLUME_300));
+        drinkVolumes.put(MATCHA_TONIK, List.of(VOLUME_350));
         drinkVolumes.put(FRAPPE, List.of(VOLUME_300));
         drinkVolumes.put(BUMBLE, List.of(VOLUME_300));
-        drinkVolumes.put(MILKSHAKE, List.of(VOLUME_300));
+        drinkVolumes.put(MAZARGAN, List.of(VOLUME_250));
         drinkVolumes.put(MILKSHAKE_VANILLA, List.of(VOLUME_300));
         drinkVolumes.put(MILKSHAKE_COFFEE, List.of(VOLUME_300));
         drinkVolumes.put(MILKSHAKE_BANANA, List.of(VOLUME_300));
         drinkVolumes.put(MILKSHAKE_STRAWBERRY, List.of(VOLUME_300));
         drinkVolumes.put(MILKSHAKE_CHOCOLATE, List.of(VOLUME_300));
+        drinkVolumes.put(LEMONADE_1, List.of(VOLUME_350));
+        drinkVolumes.put(LEMONADE_2, List.of(VOLUME_350));
+        drinkVolumes.put(LEMONADE_3, List.of(VOLUME_350));
     }
 }

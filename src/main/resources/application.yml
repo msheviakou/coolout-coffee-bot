@@ -9,8 +9,8 @@ spring:
     show-sql: true
 #    hibernate:
 #      ddl-auto: update
-#  profiles:
-#    active: initdb
+  profiles:
+    active: initdb
 
 bot:
   name: ${BOT_NAME:CooloutTestBot}

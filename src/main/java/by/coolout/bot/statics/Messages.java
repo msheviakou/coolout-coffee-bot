@@ -34,16 +34,17 @@ public class Messages {
     public static final String MENU_TWIST= "\uD83D\uDD38 Творожно-лимонный твист - 2.7\n\n";
 
     public static final String MENU_DESSERT= "Десерты \uD83C\uDF70\n";
-    public static final String MENU_CHEESCAKE_MINI= "\uD83D\uDD39 Чизкейк (классика, клубника, малина, лимон, шоколад) - 2.5\n";
+    public static final String MENU_CHEESCAKE_MINI= "\uD83D\uDD39 Чизкейк (классика, клубника, малина, лимон, кокос, арахис) - 2.5\n";
     public static final String MENU_CHEESCAKE_MAX= "\uD83D\uDD39 Чизкейк (лесные ягоды, шоколадная крошка) - 4.3\n";
-    public static final String MENU_POTATO= "\uD83D\uDD39 Пирожное картошка - 2.3\n";
+//    public static final String MENU_POTATO= "\uD83D\uDD39 Пирожное картошка - 2.3\n";
+    public static final String MENU_MEDUNICA= "\uD83D\uDD39 Торт медуница - 3.0\n";
     public static final String MENU_RING= "\uD83D\uDD39 Пирожное творожное кольцо - 1.7\n";
     public static final String MENU_MUFFIN= "\uD83D\uDD39 Маффин шоколадный - 2.5\n";
     public static final String MENU_COOKIES= "\uD83D\uDD39 Печенье (овсяное, шоколадная глазурь) - 2.1\n\n";
 
     public static final String MENU_BARS= "Батончики \uD83C\uDF6B\n";
-    public static final String MENU_CROCANT= "\uD83D\uDD38 Крокант (грильяж с миндалём) - 0.5\n";
-    public static final String MENU_BANABAR= "\uD83D\uDD38 БанаБар (суфле с бананом и клубникой) - 0.7\n";
+//    public static final String MENU_CROCANT= "\uD83D\uDD38 Крокант (грильяж с миндалём) - 0.5\n";
+//    public static final String MENU_BANABAR= "\uD83D\uDD38 БанаБар (суфле с бананом и клубникой) - 0.7\n";
     public static final String MENU_BONTIME= "\uD83D\uDD38 Бонтайм (со вкусом пломбира) - 0.4\n";
     public static final String MENU_CLICK= "\uD83D\uDD38 Клик (очень похож на киткат) - 1.3\n";
     public static final String MENU_OZERA_ORANGE= "\uD83D\uDD38 Озера (шоколад с апельсином) - 2.0\n";
@@ -51,7 +52,7 @@ public class Messages {
     public static final String MENU_IMMUNITY= "\uD83D\uDD38 Иммунитет (фрукты) - 1.5\n";
     public static final String MENU_WEIGHT_CONTROL= "\uD83D\uDD38 Контроль веса (фрукты и имбирь) - 1.2\n";
     public static final String MENU_YOTA= "\uD83D\uDD38 Йота (драже как эмэмдэмс) - 1.0\n";
-    public static final String MENU_ZEBRA= "\uD83D\uDD38 Зебра (батончик как пикник) - 1.0\n";
+//    public static final String MENU_ZEBRA= "\uD83D\uDD38 Зебра (батончик как пикник) - 1.0\n";
     public static final String MENU_CHOCOLATE_OZERA= "\uD83D\uDD38 Шоколадка Озера (Молочный, карамель, горький) - 3.0\n";
     public static final String MENU_CHOCOLATE_OZERA_HAZELNUT= "\uD83D\uDD38 Шоколадка Озера (Молочный с фундуком) - 3.5\n\n";
 
