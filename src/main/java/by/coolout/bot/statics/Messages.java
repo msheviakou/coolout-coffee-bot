@@ -10,7 +10,7 @@ public class Messages {
     public static final String PRESS_TIME= "Когда тебя ждать? \uD83D\uDE0C";
     public static final String PRESS_TIME_DELIVERY= "К какому времени необходимо доставить? \uD83D\uDE0C";
 //    public static final String CHOOSE_PLACE= "Где будешь пить? \uD83D\uDE04";
-    public static final String CHOOSE_PLACE= "Записывайся на праздник \uD83C\uDF89 Либо делай заказ \uD83D\uDE05";
+    public static final String CHOOSE_PLACE= "Записывайся на праздник \uD83C\uDF82\n Либо делай заказ \uD83D\uDE05";
     public static final String APPROVE_PRICE= "Стоимость заказа: ";
     public static final String PRESS_USERNAME= "Меня зовут Бот Cooloutович. А тебя? \uD83D\uDC4B";
     public static final String WAIT_CALL= "Я свяжусь с тобой и обсудим детали. Договорились? \uD83D\uDE0B";
@@ -24,7 +24,8 @@ public class Messages {
     public static final String PLACE_WITH_MYSELF= "С собой \uD83C\uDFC3";
     public static final String PLACE_IN= "На месте \uD83D\uDEA9";
     public static final String PLACE_DELIVERY= "Доставка \uD83D\uDE81";
-    public static final String BIRTHDAY= "\uD83D\uDE0A ИДУ НА ДЕНЬ РОЖДЕНИЯ \uD83D\uDE0A";
+    public static final String BIRTHDAY= "\uD83D\uDE0E ИДУ НА ДЕНЬ РОЖДЕНИЯ \uD83D\uDE0E";
+    public static final String BIRTHDAY_RECORD= " записали тебя на День Рождения кофейни COOLOUT \uD83D\uDC9B\nПриходи 2 июля (пятница) в 19:00 \uD83D\uDD56";
     public static final String DONT_UNDERSTAND= "Либо я дурак, либо ты сломал меня \uD83D\uDE13 Напиши /start и я заработаю \uD83D\uDE4F";
     public static final String WORK_SCHEDULE= "Наш график работы:\nВС-ЧТ с 9:00 до 21:00\nПТ-СБ с 10:00 до 22:00\nЖдём тебя в рабочее время \uD83D\uDE0A";
 
