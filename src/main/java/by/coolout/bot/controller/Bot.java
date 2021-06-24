@@ -75,7 +75,9 @@ public class Bot extends TelegramLongPollingBot {
                     sendMessage(message);
 
                     String text = message.getText();
-                    if (BIRTHDAY.contains(text) || ORDER_ACCEPTED.contains(text) || ORDER_ACCEPTED_DELIVERY.contains(text)) {
+                    if (BIRTHDAY.contains(text)) {
+                        sendMessage(new SendMessage(cooloutChat, chat.getFirstName() + " " + chat.getLastName() + " " + chat.getUserName() + " записался на днюху!"));
+                    } else if (ORDER_ACCEPTED.contains(text) || ORDER_ACCEPTED_DELIVERY.contains(text)) {
                         sendMessage(orderHandler.sendMessageToCoolout(cooloutChat));
                     }
 //                } else {
