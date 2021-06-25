@@ -6,7 +6,8 @@ import by.coolout.bot.entity.ChatDTO;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardRemove;
 
-import static by.coolout.bot.context.Context.*;
+import static by.coolout.bot.context.Context.CTX_STEP;
+import static by.coolout.bot.context.Context.CTX_SYRUP;
 import static by.coolout.bot.statics.Messages.*;
 
 public class SyrupHandler extends DefaultHandler {
@@ -20,10 +21,7 @@ public class SyrupHandler extends DefaultHandler {
             context.put(CTX_SYRUP, chatDTO.getMessageText());
             ContextManager.put(chatDTO.getChatId(), context);
 
-            String text = WRITE_WISHES;
-            if (PLACE_DELIVERY.equals(context.getStringAttribute(CTX_PLACE))) {
-                text = createMenu();
-            }
+            String text = createMenu();
 
             message = super.getTelegramService().createMessage(chatDTO.getChatId(), text, new ReplyKeyboardRemove());
         } else {
