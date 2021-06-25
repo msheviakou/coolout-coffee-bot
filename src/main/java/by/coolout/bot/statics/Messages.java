@@ -42,6 +42,12 @@ public class Messages {
     public static final String MENU_CHEESCAKE_1= "\uD83D\uDD39 Чизкейк (классика, клубника, шоколад, малина, лимон, кокос, арахис) - 2.5\n";
     public static final String MENU_CHEESCAKE_2= "\uD83D\uDD39 Чизкейк яблочный - 4.2\n";
     public static final String MENU_CHEESCAKE_3= "\uD83D\uDD39 Чизкейк (ореховый, шоколадная крошка) - 4.5\n";
+    public static final String MENU_VELES_1= "\uD83D\uDD39 Торт Сметанник - 3.5\n";
+    public static final String MENU_VELES_2= "\uD83D\uDD39 Торт Морковный - 3.5\n";
+    public static final String MENU_VELES_3= "\uD83D\uDD39 Торт Грушевый с рикоттой - 4.2\n";
+    public static final String MENU_VELES_4= "\uD83D\uDD39 Тирамису Кофейный - 4.2\n";
+    public static final String MENU_VELES_5= "\uD83D\uDD39 Капкейк Брауни - 4.4\n";
+    public static final String MENU_VELES_6= "\uD83D\uDD39 Торт Три Шоколада - 4.6\n";
 
     public static final String MENU_ICE_CREAM= "Мороженое (100г) \uD83C\uDF68\n";
     public static final String MENU_ICE_CREAM_1= "\uD83D\uDD38 Ваниль - 3.0\n";
