@@ -7,8 +7,8 @@ spring:
   jpa:
     database: postgresql
     show-sql: true
-    hibernate:
-      ddl-auto: none
+#    hibernate:
+#      ddl-auto: update
 #  profiles:
 #    active: initdb
 

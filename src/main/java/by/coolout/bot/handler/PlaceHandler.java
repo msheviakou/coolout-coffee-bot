@@ -3,12 +3,16 @@ package by.coolout.bot.handler;
 import by.coolout.bot.context.Context;
 import by.coolout.bot.context.ContextManager;
 import by.coolout.bot.entity.ChatDTO;
+import by.coolout.bot.statics.Drinks;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
-import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardRemove;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
+
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 import static by.coolout.bot.context.Context.CTX_PLACE;
 import static by.coolout.bot.context.Context.CTX_STEP;
-import static by.coolout.bot.statics.Messages.PRESS_USERNAME;
+import static by.coolout.bot.statics.Messages.*;
 
 public class PlaceHandler extends DefaultHandler {
 
@@ -16,17 +20,17 @@ public class PlaceHandler extends DefaultHandler {
     public SendMessage handle(ChatDTO chatDTO) throws Exception {
         SendMessage message;
         Context context = ContextManager.get(chatDTO.getChatId());
-        if (context.getIntegerAttribute(CTX_STEP) == 6) {
-            context.put(CTX_STEP, 7);
+        if (context.getIntegerAttribute(CTX_STEP) == 1) {
+            if (BIRTHDAY.equals(chatDTO.getMessageText())) {
+                return new SendMessage(chatDTO.getChatId(), BIRTHDAY_RECORD);
+            }
+
+            context.put(CTX_STEP, 2);
             context.put(CTX_PLACE, chatDTO.getMessageText());
             ContextManager.put(chatDTO.getChatId(), context);
 
-            String text = PRESS_USERNAME;
-//            if (PLACE_DELIVERY.equals(context.getStringAttribute(CTX_PLACE))) {
-//                text = PRESS_CONTACT_INFO;
-//            }
-
-            message = super.getTelegramService().createMessage(chatDTO.getChatId(), text, new ReplyKeyboardRemove());
+            ReplyKeyboardMarkup keyboard = super.getTelegramService().createKeyboard(Arrays.stream(Drinks.values()).map(Drinks::getName).collect(Collectors.toList()));
+            message = super.getTelegramService().createMessage(chatDTO.getChatId(), CHOOSE_DRINK, keyboard);
         } else {
             message = super.handle(chatDTO);
         }

@@ -20,8 +20,8 @@ public class VolumeHandler extends DefaultHandler {
     public SendMessage handle(ChatDTO chatDTO) throws Exception {
         SendMessage message;
         Context context = ContextManager.get(chatDTO.getChatId());
-        if (context.getIntegerAttribute(CTX_STEP) == 2) {
-            context.put(CTX_STEP, 3);
+        if (context.getIntegerAttribute(CTX_STEP) == 3) {
+            context.put(CTX_STEP, 4);
             context.put(CTX_VOLUME, chatDTO.getMessageText());
             ContextManager.put(chatDTO.getChatId(), context);
 
