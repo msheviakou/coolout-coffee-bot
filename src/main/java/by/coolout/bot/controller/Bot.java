@@ -73,7 +73,7 @@ public class Bot extends TelegramLongPollingBot {
 //                if (WorkScheduleFilter.isOpened()) {
                     SendMessage message = startHandler.handle(chatDto);
                     if (message.getText().equals(BIRTHDAY_RECORD)) {
-                        message.setText(chat.getFirstName() + " " + chat.getLastName() + BIRTHDAY_RECORD);
+                        message.setText(chat.getFirstName() + " " + BIRTHDAY_RECORD);
                     }
                     sendMessage(message);
 
