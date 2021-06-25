@@ -29,12 +29,12 @@ public class Messages {
     public static final String DONT_UNDERSTAND= "Либо я дурак, либо ты сломал меня \uD83D\uDE13 Напиши /start и я заработаю \uD83D\uDE4F";
     public static final String WORK_SCHEDULE= "Наш график работы:\nВС-ЧТ с 9:00 до 21:00\nПТ-СБ с 10:00 до 22:00\nЖдём тебя в рабочее время \uD83D\uDE0A";
 
-    public static final String MENU_BAKERY= "Выпечка \uD83C\uDF5E\n";
+    public static final String MENU_BAKERY= "Выпечка \uD83C\uDF5E\n\n";
 //    public static final String MENU_CROISSANT= "\uD83D\uDD38 Круассан - 2.8\n";
-    public static final String MENU_OATMEAL= "\uD83D\uDD38 Овсянка на воде - 2.0 | на молоке - 2.5\n\n";
-    public static final String MENU_EGGS= "\uD83D\uDD38 Яичница на пару - 2.5\n\n";
-    public static final String MENU_TWIST= "\uD83D\uDD38 Творожно-лимонный твист - 2.9\n\n";
-    public static final String MENU_PUFF= "\uD83D\uDD38 Слойка с ветчиной и сыром - 3.0\n";
+    public static final String MENU_OATMEAL= "\uD83D\uDD38 Овсянка на воде - 2.0 | на молоке - 2.5\n";
+    public static final String MENU_EGGS= "\uD83D\uDD38 Яичница на пару - 2.5\n";
+    public static final String MENU_TWIST= "\uD83D\uDD38 Творожно-лимонный твист - 2.9\n";
+    public static final String MENU_PUFF= "\uD83D\uDD38 Слойка с ветчиной и сыром - 3.0\n\n";
 
     public static final String MENU_DESSERT= "Десерты \uD83C\uDF70\n";
     public static final String MENU_POTATO= "\uD83D\uDD39 Пирожное картошка - 2.3\n";
@@ -47,14 +47,14 @@ public class Messages {
     public static final String MENU_VELES_3= "\uD83D\uDD39 Торт Грушевый с рикоттой - 4.2\n";
     public static final String MENU_VELES_4= "\uD83D\uDD39 Тирамису Кофейный - 4.2\n";
     public static final String MENU_VELES_5= "\uD83D\uDD39 Капкейк Брауни - 4.4\n";
-    public static final String MENU_VELES_6= "\uD83D\uDD39 Торт Три Шоколада - 4.6\n";
+    public static final String MENU_VELES_6= "\uD83D\uDD39 Торт Три Шоколада - 4.6\n\n";
 
     public static final String MENU_ICE_CREAM= "Мороженое (100г) \uD83C\uDF68\n";
     public static final String MENU_ICE_CREAM_1= "\uD83D\uDD38 Ваниль - 3.0\n";
     public static final String MENU_ICE_CREAM_2= "\uD83D\uDD38 Шоколад - 3.3\n";
     public static final String MENU_ICE_CREAM_3= "\uD83D\uDD38 Клубника - 3.5\n";
     public static final String MENU_ICE_CREAM_4= "\uD83D\uDD38 Дыня - 3.5\n";
-    public static final String MENU_ICE_CREAM_5= "\uD83D\uDD38 Аффогато (ванильное мороженое + эспрессо) - 3.7\n";
+    public static final String MENU_ICE_CREAM_5= "\uD83D\uDD38 Аффогато (ванильное мороженое + эспрессо) - 3.7\n\n";
 
     public static final String MENU_BARS= "Батончики \uD83C\uDF6B\n";
     public static final String MENU_BONTIME= "\uD83D\uDD39 Бонтайм (со вкусом пломбира) - 0.4\n";
