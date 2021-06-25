@@ -11,7 +11,7 @@ public class Messages {
     public static final String PRESS_TIME_DELIVERY= "К какому времени необходимо доставить? \uD83D\uDE0C";
 //    public static final String CHOOSE_PLACE= "Где будешь пить? \uD83D\uDE04";
     public static final String CHOOSE_PLACE= "Записывайся на праздник \uD83C\uDF82\nЛибо делай заказ \uD83D\uDE05";
-    public static final String APPROVE_PRICE= "Стоимость заказа: ";
+    public static final String APPROVE_PRICE= "Стоимость напитка: ";
     public static final String PRESS_USERNAME= "Меня зовут Бот Cooloutович. А тебя? \uD83D\uDC4B";
     public static final String WAIT_CALL= "Я свяжусь с тобой и обсудим детали. Договорились? \uD83D\uDE0B";
     public static final String PRESS_CONTACT_INFO= "Укажи адрес доставки \uD83D\uDEA9\nТелефон для связи \uD83D\uDCDE\nИ как тебя зовут \uD83D\uDC4B\n\nА я Бот Cooloutович \uD83D\uDE09";
