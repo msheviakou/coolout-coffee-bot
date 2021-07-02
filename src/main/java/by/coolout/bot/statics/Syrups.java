@@ -6,7 +6,7 @@ public enum Syrups {
 
     NOT_NEEDED("Не нужен"),
     COCONUT ("Кокос"),
-    SALTED_CARAMEL ("Солёная карамель"),
+//    SALTED_CARAMEL ("Солёная карамель"),
     CARAMEL ("Карамель"),
     VANILLA ("Ваниль"),
     MINT ("Мята"),
