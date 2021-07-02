@@ -29,7 +29,7 @@ public class Messages {
     public static final String DONT_UNDERSTAND= "Либо я дурак, либо ты сломал меня \uD83D\uDE13 Напиши /start и я заработаю \uD83D\uDE4F";
     public static final String WORK_SCHEDULE= "Наш график работы:\nВС-ЧТ с 9:00 до 21:00\nПТ-СБ с 10:00 до 22:00\nЖдём тебя в рабочее время \uD83D\uDE0A";
 
-    public static final String MENU_PANCAKES= "Блины \uD83C\uDD95\n\n";
+    public static final String MENU_PANCAKES= "Блины \uD83C\uDD95\n";
     public static final String MENU_PANCAKES_1= "\uD83C\uDF71 С ветчиной 2.8\n";
     public static final String MENU_PANCAKES_2= "\uD83C\uDF71 С сыром 3.0\n";
     public static final String MENU_PANCAKES_3= "\uD83C\uDF71 С ветчиной и сыром 3.3\n";
@@ -48,7 +48,7 @@ public class Messages {
     public static final String MENU_PANCAKES_16= "\uD83C\uDF6F С карамелью 3.0\n";
     public static final String MENU_PANCAKES_17= "\uD83C\uDF6F С бананом и шоколадом 3.2\n\n";
 
-    public static final String MENU_BAKERY= "Завтраки весь день \uD83C\uDF5E\n\n";
+    public static final String MENU_BAKERY= "Завтраки весь день \uD83C\uDF5E\n";
 //    public static final String MENU_CROISSANT= "\uD83D\uDD38 Круассан 2.8\n";
     public static final String MENU_OATMEAL= "\uD83D\uDD38 Овсянка на воде 2.0 | на молоке 2.5\n";
     public static final String MENU_EGGS= "\uD83D\uDD38 Яичница на пару 2.5\n";
