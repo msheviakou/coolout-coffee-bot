@@ -29,6 +29,25 @@ public class Messages {
     public static final String DONT_UNDERSTAND= "Либо я дурак, либо ты сломал меня \uD83D\uDE13 Напиши /start и я заработаю \uD83D\uDE4F";
     public static final String WORK_SCHEDULE= "Наш график работы:\nВС-ЧТ с 9:00 до 21:00\nПТ-СБ с 10:00 до 22:00\nЖдём тебя в рабочее время \uD83D\uDE0A";
 
+    public static final String MENU_PANCAKES= "Блины \uD83C\uDD95\n\n";
+    public static final String MENU_PANCAKES_1= "\uD83C\uDF71 С ветчиной 2.8\n";
+    public static final String MENU_PANCAKES_2= "\uD83C\uDF71 С сыром 3.0\n";
+    public static final String MENU_PANCAKES_3= "\uD83C\uDF71 С ветчиной и сыром 3.3\n";
+    public static final String MENU_PANCAKES_4= "\uD83C\uDF71 С грибами 2.9\n";
+    public static final String MENU_PANCAKES_5= "\uD83C\uDF71 С грибами и сыром 3.4\n";
+    public static final String MENU_PANCAKES_6= "\uD83D\uDC13 С курицей, пармезаном, пекинской капустой, соусом Цезарь, кетчуп Хайнц 3.5\n";
+    public static final String MENU_PANCAKES_7= "\uD83D\uDC13 С курицей, грибами, моцареллой, соусом Цезарь 3.8\n";
+    public static final String MENU_PANCAKES_8= "\uD83D\uDC13 С курицей, ветчиной, моцареллой, шпинатом, соусом Цезарь 4.0\n";
+    public static final String MENU_PANCAKES_9= "\uD83D\uDC20 С форелью 4.5\n";
+    public static final String MENU_PANCAKES_10= "\uD83D\uDC20 С форелью, моцареллой, петрушкой 4.8\n";
+    public static final String MENU_PANCAKES_11= "\uD83D\uDC20 С форелью, пармезаном, огурцом, соевым соусом 5.2\n";
+    public static final String MENU_PANCAKES_12= "\uD83C\uDF40 С моцареллой, пармезаном, сервелатом, томатами, петрушкой, хетчуп Хайнц 4.0\n";
+    public static final String MENU_PANCAKES_13= "\uD83C\uDF6C Со сгущёнкой 2.7\n";
+    public static final String MENU_PANCAKES_14= "\uD83C\uDF6C С джемом 2.7\n";
+    public static final String MENU_PANCAKES_15= "\uD83C\uDF6C С творожным сырком 2.8\n";
+    public static final String MENU_PANCAKES_16= "\uD83C\uDF6C С карамелью 3.0\n";
+    public static final String MENU_PANCAKES_17= "\uD83C\uDF6C С бананом и шоколадом 3.2\n";
+
     public static final String MENU_BAKERY= "Выпечка \uD83C\uDF5E\n\n";
 //    public static final String MENU_CROISSANT= "\uD83D\uDD38 Круассан 2.8\n";
     public static final String MENU_OATMEAL= "\uD83D\uDD38 Овсянка на воде 2.0 | на молоке 2.5\n";
