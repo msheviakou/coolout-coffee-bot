@@ -21,7 +21,8 @@ public class StartHandler extends DefaultHandler {
             context.put(CTX_STEP, 1);
             ContextManager.put(chatDTO.getChatId(), context);
 
-            message = super.getTelegramService().createMessage(chatDTO.getChatId(), CHOOSE_PLACE, super.getTelegramService().createKeyboard(List.of(PLACE_WITH_MYSELF, PLACE_IN, PLACE_DELIVERY)));
+            message = super.getTelegramService().createMessage(chatDTO.getChatId(), CHOOSE_PLACE, super.getTelegramService().createKeyboard(List.of(PLACE_WITH_MYSELF, PLACE_IN)));
+//            message = super.getTelegramService().createMessage(chatDTO.getChatId(), CHOOSE_PLACE, super.getTelegramService().createKeyboard(List.of(PLACE_WITH_MYSELF, PLACE_IN, PLACE_DELIVERY)));
 //            message = super.getTelegramService().createMessage(chatDTO.getChatId(), CHOOSE_PLACE, super.getTelegramService().createKeyboard(List.of(BIRTHDAY, PLACE_WITH_MYSELF, PLACE_IN)));
         } else {
             message = super.handle(chatDTO);
