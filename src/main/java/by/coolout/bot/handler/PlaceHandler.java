@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 import static by.coolout.bot.context.Context.CTX_PLACE;
 import static by.coolout.bot.context.Context.CTX_STEP;
-import static by.coolout.bot.statics.Messages.*;
+import static by.coolout.bot.statics.Messages.CHOOSE_DRINK;
 
 public class PlaceHandler extends DefaultHandler {
 
@@ -21,9 +21,9 @@ public class PlaceHandler extends DefaultHandler {
         SendMessage message;
         Context context = ContextManager.get(chatDTO.getChatId());
         if (context.getIntegerAttribute(CTX_STEP) == 1) {
-            if (BIRTHDAY.equals(chatDTO.getMessageText())) {
-                return new SendMessage(chatDTO.getChatId(), BIRTHDAY_RECORD);
-            }
+//            if (BIRTHDAY.equals(chatDTO.getMessageText())) {
+//                return new SendMessage(chatDTO.getChatId(), BIRTHDAY_RECORD);
+//            }
 
             context.put(CTX_STEP, 2);
             context.put(CTX_PLACE, chatDTO.getMessageText());
